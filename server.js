@@ -4,7 +4,7 @@ const app = require('./app');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3000; // Puerto asignado
-const db = process.env.MONGODB || 'mongodb://localhost:27017/ToDo-API';
+const db = process.env.MONGODB || 'mongodb://localhost:27017/CUMN-api';
 
 mongoose.connect(db, { useNewUrlParser: true }, (err) => {
   if (err) console.log(`Database unable to conect. Error: ${err}`);
