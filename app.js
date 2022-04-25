@@ -1,8 +1,10 @@
 const express = require('express');
+var cors = require('cors')
 
 const taskRoute = require('./routes/taskRoute');
 
 const app = express();
+
 
 app.use(express.urlencoded({
   extended: false,
